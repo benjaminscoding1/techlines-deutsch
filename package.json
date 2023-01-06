@@ -1,0 +1,34 @@
+{
+  "name": "techlines-deutsch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3"
+  },
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js",
+    "app": "concurrently npm \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminscoding1/techlines-deutsch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminscoding1/techlines-deutsch/issues"
+  },
+  "homepage": "https://github.com/benjaminscoding1/techlines-deutsch#readme"
+}
