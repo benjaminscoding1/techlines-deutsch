@@ -3,9 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 export const initialState = {
   loading: false,
   error: null,
-  userInfo: null,
+  userInfo: JSON.parse(localStorage.getItem('userInfo')) ?? null,
   updateSuccess: false,
-  orders: JSON.parse(localStorage.getItem('userInfo')) ?? null,
+  orders: [],
 };
 
 export const userSlice = createSlice({
